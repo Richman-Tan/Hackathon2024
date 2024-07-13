@@ -20,6 +20,7 @@ color: #778D63;
   border: none; 
 	overflow-y: auto; /* Enable vertical scrolling */
 }
+
 .delete {
 	position: absolute;
   right: 17.5%;
@@ -168,22 +169,21 @@ color: #778D63;
   border: 1px solid #ccc;
 }
 
-.button1 :hover{
+.send :hover{
   opacity: 0.8; 
 }
 
-.button1 {
+.send {
   position: fixed;
   bottom: 2%; /* Adjust as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%);
   text-align: center; /* Center text within link */
-  background-color: #AB9B96; /* Background color of the box */
   padding: 10px; /* Padding inside the box */
   border-radius: 20px; /* Rounded corners for the box */
   width: auto; /* Adjust width as needed */
   cursor: pointer; /* Change cursor to pointer on hover */
-  display: inline-block; /* Ensures the box expands with the content */
+
   width: 80px;
   color: #f0e7d8;
   font-size: 1.2em;
@@ -195,7 +195,7 @@ color: #778D63;
 
 .link2 {
   position: relative;
-  bottom: -200px; /* Adjust this value as needed */
+  bottom: -480px; /* Adjust this value as needed */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -217,4 +217,19 @@ color: #778D63;
 
 .buttonsave{
   position: relative;
+}
+
+.image-container img {
+  /* max-width: 100%;  */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  position: absolute;
+}
+
+.wrappersof{
+  display: flex;
+  justify-content: center;
+  margin-top: -300px;
+  /* Adjust margin as needed */
 }

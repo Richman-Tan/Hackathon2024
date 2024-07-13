@@ -1,211 +1,328 @@
 body1 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .wrapper1 {
-    position: relative;
-    padding: 20px; /* Add padding to create space around elements */
-    
-  }
-  
-  .test{
-    padding-left:100px;
-    padding-right: 100px;
-    
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  .logout {
-    position: absolute;
-    left: 88%;
-    top: 7%;
-    width: 100px; 
-    height: 50px; 
-    cursor: pointer;
-    color: #a0482d;
-    background-color: #E5BEBE;
-    border-radius: 20px;
-    margin-right: 2px ;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    font-size: 1.2rem;
-  }
-  
-  .logout:hover {
-    opacity: 0.8; 
-  }
-  
-  
-  h11 {
-    font-size: 5em;
-    color: #778d63;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 20px; /* Optional: Add margin for spacing from the edge */
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Adjust margin as needed */
-    
-   
-  }
-  
-  .image-container img {
-    /* max-width: 100%;  */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    position: absolute;
-  }
-  
-  .buttonface {
-    position: relative;
-    top: 110px;
-    left: -150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  .buttonhair{
-    position: relative;
-    top: 60px;
-    left: -150px;
-    width: 50px;
-    height: auto;
-  }
-  .buttonoutfit{
-    position: relative;
-    top: 160px;
-    left: -150px;
-    width: 50px;
-    height: auto;
-  
-  }
-  
-  .buttoncolour{
-    position: relative;
-    top: 210px;
-    left: -150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  .buttoncolourright {
-    position: relative;
-    top: -50px;
-    left: 150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  .buttonfaceright {
-    position: relative;
-    top: -150px;
-    left: 150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  .buttonhairright {
-    position: relative;
-    top: -200px;
-    left: 150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  .buttonoutfitright {
-    position: relative;
-    top: -100px;
-    left: 150px;
-    width: 50px;
-    height: auto;
-  }
-  
-  #con .input-box1 {
-    width: 2000px; /* Calculates width minus margins */
-    max-width: 500%;
-    width: auto;
-    height: 75px; /* Adjust height as needed */
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%); /* Center align the element */
-    background-color: rgba(171,155,150,0.2);
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .input-box1 {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 400px; /* Limit maximum width */
-    height: 50px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  
-  .input-box1 input {
-    width: calc(100% - 40px); /* Adjust input width */
-    height: 100%;
-    top:5px;
-    background: transparent;
-    border: none;
-        color: #AB9B96;
-    outline: none;
-    border-radius: 40px;
-    padding: 20px;
-  
-  }
-  
-  .input-box2 {
-  
-    transform: translateX(-50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 400px; /* Limit maximum width */
-    height: 50px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
-  
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  
-  .input-box2 input {
-    width: calc(100% - 40px); /* Adjust input width */
-    height: 100%;
-    top:5px;
-    background: transparent;
-    border: none;
-        color: #AB9B96;
-    outline: none;
-    border-radius: 40px;
-    padding: 20px;
-  
-  }
-  
-  .buttonsave{
-    text-decoration: underline;
-    color: #778d63;
-    text-align: center;
-    font-size: large;
-  }
-  
-  .buttonsave:hover{
-    color: #778d63;
-  }
+
+.wrapper1 {
+  position: relative;
+  padding: 20px;
+  /* Add padding to create space around elements */
+
+}
+
+.test {
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+.logout {
+  position: absolute;
+  left: 100px;
+  top:8%;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: #a0482d;
+  background-color: #E5BEBE;
+  border-radius: 20px;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  font-size: 1.2rem;
+}
+
+.logout:hover {
+  opacity: 0.8;
+}
+
+.nextPage {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: #778D63;
+  background-color: #CAD7BE;
+  border-radius: 20px;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  font-size: 1.2rem;
+}
+
+.nextPage:hover {
+  opacity: 0.8;
+}
+
+h11 {
+  font-size: 5em;
+  color: #778d63;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  /* Optional: Add margin for spacing from the edge */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* Adjust margin as needed */
+
+
+}
+
+.texts{
+  display: flex;
+  margin-top: -100px;
+}
+
+.image-container img {
+  /* max-width: 100%;  */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  position: absolute;
+}
+
+.buttonface {
+  position: relative;
+  top: 110px;
+  left: -150px;
+  width: 50px;
+  height: auto;
+}
+
+.buttonhair {
+  position: relative;
+  top: 60px;
+  left: -150px;
+  width: 50px;
+  height: auto;
+}
+
+.buttonoutfit {
+  position: relative;
+  top: 160px;
+  left: -150px;
+  width: 50px;
+  height: auto;
+
+}
+
+.buttoncolour {
+  position: relative;
+  top: 210px;
+  left: -150px;
+  width: 50px;
+  height: auto;
+}
+
+.buttoncolourright {
+  position: relative;
+  top: -50px;
+  left: 240px;
+  width: 50px;
+  height: auto;
+}
+
+.buttonfaceright {
+  position: relative;
+  top: -150px;
+  left: 240px;
+  width: 50px;
+  height: auto;
+}
+
+.buttonhairright {
+  position: relative;
+  top: -200px;
+  left: 240px;
+  width: 50px;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: -10px; /* Adjust margin as needed */
+}
+
+.buttonoutfitright {
+  position: relative;
+  top: -100px;
+  left: 240px;
+  width: 50px;
+  height: auto;
+}
+
+#con .input-box1 {
+  width: 2000px;
+  /* Calculates width minus margins */
+  max-width: 500%;
+  width: auto;
+  height: 75px;
+  /* Adjust height as needed */
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  /* Center align the element */
+  background-color: rgba(171, 155, 150, 0.2);
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-box1 {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  /* Adjust width as needed */
+  max-width: 400px;
+  /* Limit maximum width */
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(171, 155, 150, 0.3);
+  /* Adjust opacity here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.input-box1 input {
+  width: calc(100% - 40px);
+  /* Adjust input width */
+  height: 100%;
+  top: 5px;
+  background: transparent;
+  border: none;
+  color: #AB9B96;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
+
+}
+
+.input-box2 {
+
+  transform: translateX(-50%);
+  width: 80%;
+  /* Adjust width as needed */
+  max-width: 400px;
+  /* Limit maximum width */
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(171, 155, 150, 0.3);
+  /* Adjust opacity here */
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.input-box2 input {
+  width: calc(100% - 40px);
+  /* Adjust input width */
+  height: 100%;
+  top: 5px;
+  background: transparent;
+  border: none;
+  color: #AB9B96;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
+
+}
+
+.input-box2 input::placeholder {
+  color: #AB9B96;
+  /* Change to your desired color */
+  opacity: 1;
+  /* Ensures the color is applied */
+}
+
+.buttonsave {
+  text-decoration: underline;
+  color: #778d63;
+  text-align: center;
+  font-size: large;
+}
+
+.buttonsave:hover {
+  color: #778d63;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Or use 'space-around' or 'space-evenly' */
+  gap: 25px; /* Optional: Adjust the gap between buttons */
+}
+
+.button-item {
+  flex: 1; /* Make each button take equal space */
+  display: flex;
+  justify-content: center;
+}
+
+.button button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #778d63;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-item.active {
+  background-color: #778d63; /* Example background color when button is active */
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+
+}
+
+.btn {
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background-color: #778d63;
+  color: white;
+}
+
+.btn:focus {
+  outline: none; /* Remove default focus outline */
+  border-radius: 15px;
+}
+
+
+
+

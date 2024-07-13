@@ -5,6 +5,10 @@ import buttonRight from './buttonRight.png';
 import buttonAdd from './buttonAdd.png';
 import speechBubble from './speechBubble.png';
 import { useNavigate } from 'react-router-dom';
+import colour from '../../assets/colours/colour1.png';
+import face from '../../assets/faces/IMG_0775.PNG'
+import hair from '../../assets/hairs/IMG_0774.PNG'
+import outfit from '../../assets/outfits/IMG_0779.PNG'
 
 const Vent = () => {
 	const [inputText, setInputText] = useState('');
@@ -93,6 +97,14 @@ const Vent = () => {
 
 	return (
 		<div id="con">
+			<div className="flex-wrap wrappersof">
+				<div className="image-container">
+					<img src={colour} alt="colour" />
+					<img src={face} alt="face" />
+					<img src={hair} alt="hair" />
+					<img src={outfit} alt="outfit" />
+				</div>
+			</div>
 			<div className="left-side">
 				<p className="title">ease elves</p>
 
@@ -127,7 +139,7 @@ const Vent = () => {
 						value={inputText}
 						onChange={(e) => setInputText(e.target.value)}
 					/>
-					<button type="button" onClick={handleVoiceInput}>
+					<button type="button" onClick={handleVoiceInput} >
 						{isRecording ? 'stop' : 'record'}
 					</button>
 				</div>
@@ -136,8 +148,8 @@ const Vent = () => {
 					<p>alfred</p>
 				</div>
 
-				<div className="button button1">
-					<button type="submit" onClick={handleAddText}>send</button>
+				<div className="button send">
+					<button type="submit" onClick={handleAddText} style={{ position: 'fixed', top: -105, right: -440, zIndex: 1000 }}>send</button>
 				</div>
 
 				<div className="link2">

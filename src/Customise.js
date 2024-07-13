@@ -20,9 +20,25 @@ import buttonfaceright from './assets/buttons/buttonfaceright.png';
 import buttonhairright from './assets/buttons/buttonhairright.png';
 import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
 import { FaRegShareSquare } from "react-icons/fa";
+import temp from './assets/buttons/temp.png'
 
 const Customise = () => {
     const navigate = useNavigate();
+    const [activeButton, setActiveButton] = useState(null); // State to track active button
+
+    // Function to handle button click
+    const handleButtonClick = (buttonName) => {
+        setActiveButton(buttonName); // Set the active button
+    };
+
+    const handleLogout = () => {
+        navigate('/');
+    };
+
+    const handleNextPage = () => {
+        navigate('/vent');
+    }
+
     const [name, setName] = useState('');
     const hairs = [hair1, hair2];
     const faces = [face1, face2];
@@ -37,10 +53,6 @@ const Customise = () => {
     const nextface = () => {
         setFaceIdx((faceIdx + 1) % faces.length);
     };
-
-    const handleLogout = () => {
-		navigate('/');
-	};
 
     const nexthair = () => {
         setHairIdx((hairIdx + 1) % hairs.length);
@@ -67,16 +79,18 @@ const Customise = () => {
 
     return (
         <div className='wrapper1'>
-             <div className="logout">
-					<button type="submit" onClick={handleLogout}>logout</button>
-				</div>
-                
+            <div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}>
+                <button type="submit" onClick={handleLogout}>logout</button>
+            </div>
+
             <div className='test' ref={componentRef}>
                 <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
                     ease elves
                 </h11>
 
-               
+                <h2 className="text-3xl" style={{ position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', color: '#333'} }>
+                    {name || 'New Elf'}
+                </h2>
 
                 <div className="flex-wrap">
                     <div className="image-container">
@@ -138,28 +152,44 @@ const Customise = () => {
                 </div>
             </div>
 
-        
+
             <div className="button buttonsave">
                 <button onClick={handleExport}>
-                <FaRegShareSquare />
+                    <FaRegShareSquare /> Share
                 </button>
             </div>
+            
+            <div className="nextPage" style={{ position: 'fixed', top: 560, right: 280, zIndex: 1000 }}>
+                <button type="submit" onClick={handleNextPage}>Next</button>
+            </div>
 
-            <div className="button-row">
-                <button>Button 1 </button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
-            </div>  
+
+            <div className="button-container">
+                <div className={`button-item ${activeButton === 'Happy' ? 'active' : ''}`} onClick={() => handleButtonClick('Happy')}>
+                    <button className="btn">Happy</button>
+                </div>
+                <div className={`button-item ${activeButton === 'Sad' ? 'active' : ''}`} onClick={() => handleButtonClick('Sad')}>
+                    <button className="btn">Sad</button>
+                </div>
+                <div className={`button-item ${activeButton === 'Sassy' ? 'active' : ''}`} onClick={() => handleButtonClick('Sassy')}>
+                    <button className="btn">Sassy</button>
+                </div>
+                <div className={`button-item ${activeButton === 'Other' ? 'active' : ''}`} onClick={() => handleButtonClick('Other')}>
+                    <button className="btn">Other</button>
+                </div>
+            </div>
 
             <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
                 <input
                     type="text"
-                    placeholder='name'
-                    value={name}
+                    placeholder='My Name'
                     onChange={(e) => setName(e.target.value)}
                     required
                 />
+            </div>
+
+            <div className="button-item120">
+
             </div>
         </div>
     );
