@@ -8,15 +8,15 @@ const Customise = () => {
 
     return (
 
-        <div className='wrapper'>
-            <h1 className="text-4xl" style={{ position: 'fixed', top: 0, left: 50 }}>
+        <div className='wrapper1'>
+            <h11 className="text-4xl" style={{ position: 'fixed', top: 0, left: 50 }}>
                 ease elves
-            </h1>
+            </h11>
             <div className="image-container">
             <img src = {bodyImg} alt = "body"/>
             </div>
 
-            <div className="input-box" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
+            <div className="input-box1" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
                 <input type="text" placeholder='name' required/>
             </div>
     

@@ -26,7 +26,7 @@
     background-image: url(../img/clothes/clothes1.png);
 } */
 
-h1 {
+h11 {
     font-size: 5em;
     color: #778d63;
     position: fixed;
@@ -35,12 +35,12 @@ h1 {
     margin: 20px; /* Optional: Add margin for spacing from the edge */
 }
 
-.wrapper {
+.wrapper1 {
     position: relative;
     padding: 20px; /* Add padding to create space around elements */
 }
 
-.wrapper .input-box {
+.wrapper1 .input-box1 {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -54,7 +54,7 @@ h1 {
     background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
 }
 
-.input-box input {
+.input-box1 input {
     width: calc(100% - 40px); /* Adjust input width */
     height: 100%;
     background: transparent;
@@ -66,7 +66,7 @@ h1 {
     padding-right: 60px; /* Adjust padding for icon */
 }
 
-.input-box .icon {
+.input-box1 .icon {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -74,7 +74,7 @@ h1 {
     font-size: 16px;
 }
 
-.wrapper button {
+.wrapper1 button {
     width: 100%;
     height: 45px;
     border: none;
