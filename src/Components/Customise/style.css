@@ -1,115 +1,115 @@
 body1 {
     margin: 0;
     padding: 0;
-}
-
-
-.wrapper1 {
+  }
+  
+  
+  .wrapper1 {
     position: relative;
     padding: 20px; /* Add padding to create space around elements */
     
-}
-
-.test{
+  }
+  
+  .test{
     padding-left:100px;
     padding-right: 100px;
     
-}
-
-
-h11 {
+  }
+  
+  
+  h11 {
     font-size: 5em;
     color: #778d63;
     position: fixed;
     top: 0;
     left: 0;
     margin: 20px; /* Optional: Add margin for spacing from the edge */
-}
-
-.image-container {
+  }
+  
+  .image-container {
     display: flex;
     justify-content: center;
     margin-top: 10px; /* Adjust margin as needed */
     
    
-}
-
-.image-container img {
+  }
+  
+  .image-container img {
     /* max-width: 100%;  */
     height: auto; /* Maintain aspect ratio */
     display: block;
     position: absolute;
-}
-
-.buttonface {
+  }
+  
+  .buttonface {
     position: relative;
     top: 110px;
     left: -150px;
     width: 50px;
     height: auto;
-}
-
-.buttonhair{
+  }
+  
+  .buttonhair{
     position: relative;
     top: 60px;
     left: -150px;
     width: 50px;
     height: auto;
-}
-.buttonoutfit{
+  }
+  .buttonoutfit{
     position: relative;
     top: 160px;
     left: -150px;
     width: 50px;
     height: auto;
-
-}
-
-.buttoncolour{
+  
+  }
+  
+  .buttoncolour{
     position: relative;
     top: 210px;
     left: -150px;
     width: 50px;
     height: auto;
-}
-
-.buttoncolourright {
+  }
+  
+  .buttoncolourright {
     position: relative;
     top: -50px;
     left: 150px;
     width: 50px;
     height: auto;
-}
-
-.buttonfaceright {
+  }
+  
+  .buttonfaceright {
     position: relative;
     top: -150px;
     left: 150px;
     width: 50px;
     height: auto;
-}
-
-.buttonhairright {
+  }
+  
+  .buttonhairright {
     position: relative;
     top: -200px;
     left: 150px;
     width: 50px;
     height: auto;
-}
-
-.buttonoutfitright {
+  }
+  
+  .buttonoutfitright {
     position: relative;
     top: -100px;
     left: 150px;
     width: 50px;
     height: auto;
-}
-
-.cont{
+  }
+  
+  .cont{
    
-}
-
-.input-box1 {
+  }
+  
+  .input-box1 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -122,11 +122,11 @@ h11 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-
-.input-box1 input {
+  }
+  
+  
+  
+  .input-box1 input {
     width: calc(100% - 40px); /* Adjust input width */
     height: 100%;
     top:5px;
@@ -136,11 +136,11 @@ h11 {
     outline: none;
     border-radius: 40px;
     padding: 20px;
-
-}
-
-.input-box2 {
-
+  
+  }
+  
+  .input-box2 {
+  
     transform: translateX(-50%);
     width: 80%; /* Adjust width as needed */
     max-width: 400px; /* Limit maximum width */
@@ -148,14 +148,14 @@ h11 {
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
- 
+  
     align-items: center;
     justify-content: center;
-}
-
-
-
-.input-box2 input {
+  }
+  
+  
+  
+  .input-box2 input {
     width: calc(100% - 40px); /* Adjust input width */
     height: 100%;
     top:5px;
@@ -165,16 +165,16 @@ h11 {
     outline: none;
     border-radius: 40px;
     padding: 20px;
-
-}
-
-.buttonsave{
+  
+  }
+  
+  .buttonsave{
     text-decoration: underline;
     color: #778d63;
     text-align: center;
     font-size: large;
-}
-
-.buttonsave:hover{
+  }
+  
+  .buttonsave:hover{
     color: #778d63;
-}
+  }

@@ -1,5 +1,4 @@
-import React, { useState, useRef } from 'react';
-import { exportComponentAsPNG } from 'react-component-export-image';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Components/Customise/style.css';
 import bodyImg from './assets/IMG_0773.PNG';
@@ -21,130 +20,122 @@ import buttonhairright from './assets/buttons/buttonhairright.png';
 import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
 
 const Customise = () => {
-    const navigate = useNavigate();
-    const [name, setName] = useState('');
-    const hairs = [hair1, hair2];
-    const faces = [face1, face2];
-    const outfits = [outfit1, outfit2];
-    const colours = [bodyImg, colour1, colour2];
-    const [faceIdx, setFaceIdx] = useState(0);
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/vent'); 
+};
+
+    const hairs = [hair1, hair2]
+    const faces =[ face1, face2]
+    const outfits =[outfit1,outfit2]
+    const colours = [bodyImg, colour1, colour2]
+
+    const [faceIdx, setFaceIdx]= useState(0);
     const [hairIdx, setHairIdx] = useState(0);
     const [outfitIdx, setOutfitIdx] = useState(0);
     const [colourIdx, setColourIdx] = useState(0);
-    const componentRef = useRef();
+
+
 
     const nextface = () => {
-        setFaceIdx((faceIdx + 1) % faces.length);
+        setFaceIdx((faceIdx + 1) % faces.length)
     };
 
     const nexthair = () => {
-        setHairIdx((hairIdx + 1) % hairs.length);
+        setHairIdx((hairIdx + 1) % hairs.length)
     };
 
     const nextoutfit = () => {
-        setOutfitIdx((outfitIdx + 1) % outfits.length);
+        setOutfitIdx((outfitIdx + 1) % outfits.length)
     };
 
     const nextcolour = () => {
-        setColourIdx((colourIdx + 1) % colours.length);
-    };
-
-    const handleExport = () => {
-        // Ensure the name input is not empty before exporting
-        if (name.trim() === '') {
-            alert('Please enter a name before exporting.');
-            return;
-        }
-
-        // Export component as PNG with the entered name
-        exportComponentAsPNG(componentRef, { fileName: `${name}_avatar.png` });
-    };
+        setColourIdx((colourIdx + 1) % colours.length)
+    }
 
     return (
         <div className='wrapper1'>
-            <div className='test' ref={componentRef}>
-                <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
-                    ease elves
-                </h11>
+            <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
+                ease elves
+            </h11>
 
-                <div className="flex-wrap">
-                    <div className="image-container">
-                        <img src={colours[colourIdx]} alt="colour" />
-                        <img src={faces[faceIdx]} alt="face" />
-                        <img src={hairs[hairIdx]} alt="hair" />
-                        <img src={outfits[outfitIdx]} alt="outfit" />
-                    </div>
-
-                    <div className="buttonhair">
-                        <button id="nexthair" onClick={nexthair}>
-                            <img src={hairButtonImg} alt="next hair" />
-                        </button>
-                    </div>
-
-                    <div className="buttonface">
-                        <button id="nextface" onClick={nextface}>
-                            <img src={faceButtonImg} alt="next face" />
-                        </button>
-                    </div>
-
-                    <div className="buttonoutfit">
-                        <button id="nextoutfit" onClick={nextoutfit}>
-                            <img src={outfitButtonImg} alt="next outfit" />
-                        </button>
-                    </div>
-
-                    <div className="buttoncolour">
-                        <button id="nextcolour" onClick={nextcolour}>
-                            <img src={colourButtonImg} alt="next colour" />
-                        </button>
-                    </div>
+            <div className="flex-wrap">
+                <div className="image-container">
+                    <img src={colours[colourIdx]} alt="colour" />
+                    <img src={faces[faceIdx]} alt="face" />
+                    <img src={hairs[hairIdx]} alt="hair" />
+                    <img src={outfits[outfitIdx]} alt="outfit" />
                 </div>
 
-                <div className="flex-wrap flex-wrap2 cont">
-                    <div className="buttonhairright">
-                        <button id="nexthair" onClick={nexthair}>
-                            <img src={buttonhairright} alt="next hair" />
-                        </button>
-                    </div>
+                <div className="buttonhair">
+                    <button id="nexthair" onClick={nexthair}>
+                        <img src={hairButtonImg} alt="next hair" />
+                    </button>
+                </div>
 
-                    <div className="buttonfaceright">
-                        <button id="nextface" onClick={nextface}>
-                            <img src={buttonfaceright} alt="next face" />
-                        </button>
-                    </div>
+                <div className="buttonface">
+                    <button id="nextface" onClick={nextface}>
+                        <img src={faceButtonImg} alt="next face" />
+                    </button>
+                </div>
 
-                    <div className="buttonoutfitright">
-                        <button id="nextoutfit" onClick={nextoutfit}>
-                            <img src={buttonoutfitright} alt="next outfit" />
-                        </button>
-                    </div>
+                <div className="buttonoutfit">
+                    <button id="nextoutfit" onClick={nextoutfit}>
+                        <img src={outfitButtonImg} alt="next outfit" />
+                    </button>
+                </div>
 
-                    <div className="buttoncolourright">
-                        <button id="nextcolour" onClick={nextcolour}>
-                            <img src={buttoncolourright} alt="next colour" />
-                        </button>
-                    </div>
+                <div className="buttoncolour">
+                    <button id="nextcolour" onClick={nextcolour}>
+                        <img src={colourButtonImg} alt="next colour" />
+                    </button>
+                </div>
+
+            </div>
+
+            <div className="flex-wrap flex-wrap2">
+
+            <div className="buttonhairright">
+                    <button id="nexthair" onClick={nexthair}>
+                        <img src={buttonhairright} alt="next hair" />
+                    </button>
+                </div>
+
+            <div className="buttonfaceright">
+                    <button id="nextface" onClick={nextface}>
+                        <img src={buttonfaceright} alt="next face" />
+                    </button>
+                </div>
+
+
+
+                <div className="buttonoutfitright">
+                    <button id="nextoutfit" onClick={nextoutfit}>
+                        <img src={buttonoutfitright} alt="next outfit" />
+                    </button>
+                </div>
+
+                <div className="buttoncolourright">
+                    <button id="nextcolour" onClick={nextcolour}>
+                        <img src={buttoncolourright} alt="next colour" />
+                    </button>
                 </div>
             </div>
 
-        
-            <div className="button buttonsave">
-                <button onClick={handleExport}>
-                    Export As Image 
-                </button>
+            <div className = "button buttonsave">
+                    <button type = "submit" onClick={handleClick}>Save</button>
             </div>
 
             <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
-                <input
-                    type="text"
-                    placeholder='name'
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
+                <input type="text" placeholder='name' required />
             </div>
         </div>
+
     );
+
 };
+
 
 export default Customise;
