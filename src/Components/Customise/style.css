@@ -23,7 +23,8 @@ h11 {
 .image-container {
     display: flex;
     justify-content: center;
-    margin-top: 50px; /* Adjust margin as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+    
    
 }
 
@@ -32,13 +33,70 @@ h11 {
     height: auto; /* Maintain aspect ratio */
     display: block;
     position: absolute;
-
-    
 }
 
-.buttonBox {
+.buttonface {
     position: relative;
-    top: -100px;
+    top: -20px;
+    left: -150px;
+    width: 50px;
+    height: auto;
+}
+
+.buttonhair{
+    position: relative;
+    top: -20px;
+    left: -150px;
+    width: 50px;
+    height: auto;
+}
+.buttonoutfit{
+    position: relative;
+    top: -20px;
+    left: -150px;
+    width: 50px;
+    height: auto;
+
+}
+
+.buttoncolour{
+    position: relative;
+    top: -20px;
+    left: -150px;
+    width: 50px;
+    height: auto;
+}
+
+.buttoncolourright {
+    position: relative;
+    top: -275px;
+    left: 150px;
+    width: 50px;
+    height: auto;
+}
+
+.buttonfaceright{
+    position: relative;
+    top: -275px;
+    left: 150px;
+    width: 50px;
+    height: auto;
+}
+
+.buttonhairright{
+    position: relative;
+    top: -275px;
+    left: 150px;
+    width: 50px;
+    height: auto;
+}
+
+.buttonoutfitright{
+    position: relative;
+    top: -275px;
+    left: 150px;
+    width: 50px;
+    height: auto;
 }
 
 .input-box1 {
@@ -100,3 +158,11 @@ h11 {
 
 }
 
+.buttonsave{
+    text-decoration: underline;
+    color: #778d63;
+}
+
+.buttonsave:hover{
+    color: #778d63;
+}
