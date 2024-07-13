@@ -74,6 +74,11 @@
     margin-right: 4px;
 }
 
+.remember-forgot label {
+    color: #AB9B96; /* Desired color */
+  }
+  
+
 .remember-forgot a{
     color: #AB9B96;
     text-decoration: none;
@@ -137,3 +142,11 @@ body {
     height: auto; /* Maintain aspect ratio */; /* Set a maximum height for the image */
     margin-bottom: -40px; /* Adjusted margin */
   }
+
+
+/* LoginForm.css */
+.register-link p {
+    color: #AB9B96; /* Desired color */
+  }
+  
+
