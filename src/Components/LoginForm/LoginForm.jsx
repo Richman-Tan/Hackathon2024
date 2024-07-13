@@ -3,8 +3,16 @@ import './LoginForm.css';
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import FaceImage from './Face.png';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+      navigate('/customise'); 
+  };
+
   return (
     <div className="login-container">
         <h1 className="centered-title">ease elves</h1>
@@ -27,7 +35,7 @@ const LoginForm = () => {
                     <a href="#"> Forgot Password?</a>
                 </div>
                 <div className = "button">
-                <button type = "submit">Login</button>
+                <button type = "submit" onClick={handleLogin}>Login</button>
                 </div>
                 <div className = "register-link">
                     <p>Don't have an account? <a href="#">Register</a></p>
