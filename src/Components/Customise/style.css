@@ -1,0 +1,88 @@
+
+
+#eyes, #ears, #nose, #mouth, #clothes{
+    position:absolute;
+    width:794px;   /* width of actual image */
+    height:1123px; /* height of actual image */
+}
+
+/* .eyes1{
+    background-image: url(../img/eyes/eyes1.png);
+}
+
+.ears1{
+    background-image: url(../img/ears/ears1.png);
+}
+
+.nose1{
+    background-image: url(../img/nose/nose1.png);
+}
+
+.mouth1{
+    background-image: url(../img/mouth/mouth1.png);
+}
+
+.clothes1{
+    background-image: url(../img/clothes/clothes1.png);
+} */
+
+
+
+ h1{
+    font-size: 36px;
+    color: #778D63;
+
+}
+
+.wrapper .input-box {
+    position: relative;
+    margin: 30px 0;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px 4px 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255 .2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #AB9B96;
+    
+}
+
+
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    
+}
+
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #CAD7BE;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #778D63;
+    font-weight: 700;
+}
+
