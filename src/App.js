@@ -6,21 +6,21 @@ import Customise from "./Customise.js";
 import Vent from "./Vent.js";
 
 export default function App() {
-    return (
-        <BrowserRouter>
-            <div>
-                <Routes>
-                    <Route path="/login"
-                        element={<LoginForm />} />
+	return (
+		<BrowserRouter>
+			<div>
+				<Routes>
+					<Route path="/"
+						element={<LoginForm />} />
 
-                    <Route path="/customise"
-                        element={<Customise />} />
+					<Route path="/customise"
+						element={<Customise />} />
 
-                    <Route path="/vent"
-                        element={<Vent />} />
+					<Route path="/vent"
+						element={<Vent />} />
 
-                </Routes>
-            </div>
-        </BrowserRouter>
-    );
+				</Routes>
+			</div>
+		</BrowserRouter>
+	);
 }
