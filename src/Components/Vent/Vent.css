@@ -1,0 +1,110 @@
+.title {
+font-size: 4em;
+font-weight: bold;
+position: absolute;
+left: 10%;
+top: 10%;
+color: #778D63;
+}
+
+.buttonLeft {
+  position: absolute;
+  left: 60%;
+  top: 16%;
+  width: 35px; 
+  height: 35px; 
+  cursor: pointer;
+  border: none; 
+}
+
+.buttonRight {
+  position: absolute;
+  left: 80%;
+  top: 16%;
+  width: 35px; 
+  height: 35px; 
+  cursor: pointer;
+  border: none; 
+}
+
+.buttonAdd {
+  position: absolute;
+  left: 85%;
+  top: 60%;
+  width: 100px; 
+  height: 100px; 
+  cursor: pointer;
+  border: none; 
+}
+
+.buttonLeft:hover {
+  opacity: 0.8; 
+}
+
+.buttonRight:hover {
+  opacity: 0.8; 
+}
+
+.buttonAdd:hover {
+  opacity: 0.8; 
+}
+
+.logout {
+  position: absolute;
+  left: 88%;
+  top: 16%;
+  width: 100px; 
+  height: 30px; 
+  cursor: pointer;
+  background-color: #E5BEBE;
+  border-radius: 20px;
+  margin-right: 2px ;
+  text-align: center;
+}
+
+.logout:hover {
+  opacity: 0.8; 
+}
+
+.input-box {
+  position: fixed; /* Fixes the position at the bottom of the page */
+  bottom: 20px; /* Adds space from the bottom edge */
+  left: 20px; /* Adds space from the left edge */
+  right: 20px; /* Adds space from the right edge */
+  border-radius: 15px; /* Rounds all corners */
+  font-size: 16px; /* Increased font size */
+  padding: 10px; /* Padding inside the div */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  background-color: rgba(171, 155, 150, 0.2); /* Background color */
+  margin: 0; /* Reset any default margin */
+  text-align: left; /* Aligns text to the left */
+  overflow-wrap: break-word; /* Breaks words that are too long */
+  word-wrap: break-word; /* Ensures compatibility for older browsers */
+  overflow: auto; /* Adds scrollbar if content overflows */
+  height: auto; /* Ensures height adjusts to content */
+  min-height: 50px; /* Sets a minimum height for the div */
+}
+
+.link p a:hover{
+  text-decoration: underline;
+}
+
+.link {
+  position: fixed;
+  bottom: 0px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  text-align: center; /* Center text within link */
+}
+
+.link2 p a:hover{
+  text-decoration: underline;
+}
+
+.link2 {
+  position: relative;
+  bottom: -200px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
