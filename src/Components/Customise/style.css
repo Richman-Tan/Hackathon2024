@@ -26,63 +26,72 @@
     background-image: url(../img/clothes/clothes1.png);
 } */
 
+h1 {
+    font-size: 5em;
+    color: #778d63;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px; /* Optional: Add margin for spacing from the edge */
+}
 
-
- h1{
-    font-size: 36px;
-    color: #778D63;
-
+.wrapper {
+    position: relative;
+    padding: 20px; /* Add padding to create space around elements */
 }
 
 .wrapper .input-box {
-    position: relative;
-    margin: 30px 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width */
+    margin-bottom: 20px; /* Optional: Add margin for spacing */
     height: 50px;
-    width: 100%;
-    border-radius: 20px 4px 10px 15px;
+    border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
 }
 
-
-.input-box input{
-    width: 100%;
+.input-box input {
+    width: calc(100% - 40px); /* Adjust input width */
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255 .2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
-    padding: 20px 45px 20px 20px;
+    padding: 20px;
+    padding-right: 60px; /* Adjust padding for icon */
 }
 
-.input-box input::placeholder{
-    color: #AB9B96;
-    
-}
-
-
-.input-box .icon{
+.input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
-    
 }
 
-
-.wrapper button{
+.wrapper button {
     width: 100%;
     height: 45px;
     border: none;
-    background: #CAD7BE;
+    background: #cad7be;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Corrected box-shadow value */
     cursor: pointer;
     font-size: 18px;
-    color: #778D63;
+    color: #778d63;
     font-weight: 700;
 }
 
+.image-container img {
+    max-width: 200%; /* Ensure the image does not exceed its container width */
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */; /* Set a maximum height for the image */
+    margin-bottom: -40px; /* Adjusted margin */
+    align-content: center;
+  }
