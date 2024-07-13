@@ -159,9 +159,18 @@ h11 {
 
 .buttonsave{
   position: absolute;
+  font-size: 25px;
   bottom: 50px;
+  left: -15%;
     text-decoration: underline;
     color: #778d63;
+    background-color: #CAD7BE;
+    border-radius: 20px;
+    margin-right: 2px ;
+    text-align: center;
+    padding: 10px 35px; /* Adjust padding to make the button bigger */
+    line-height: 1; /* Adjust line height if needed */
+    display: inline-block;
 }
 
 .buttonsave:hover{
