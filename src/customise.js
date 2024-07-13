@@ -4,7 +4,6 @@ import bodyImg from './assets/IMG_0773.PNG';
 
 const Customise = () => {
 
-   
 
     return (
 
@@ -21,19 +20,6 @@ const Customise = () => {
             <input type="text" placeholder='name' required />
         </div>
     
-
-
-
-{/* 
- const [dressupState, setDressupState] = useState({
-        hair: {current: 0, total: 2},
-        face: {current: 0, total: 2},
-        outfit: {current: 0, total: 2},
-      });
-            <div id="body"></div>
-            <div id="hair" className="hair"></div>
-            <div id="face" className="face"></div>
-            <div id="outfit" className="outfit"></div> */}
 
         </div>
         
