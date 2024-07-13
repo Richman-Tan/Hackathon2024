@@ -37,6 +37,10 @@ const Customise = () => {
         setFaceIdx((faceIdx + 1) % faces.length);
     };
 
+    const handleLogout = () => {
+		navigate('/');
+	};
+
     const nexthair = () => {
         setHairIdx((hairIdx + 1) % hairs.length);
     };
@@ -62,10 +66,16 @@ const Customise = () => {
 
     return (
         <div className='wrapper1'>
+             <div className="logout">
+					<button type="submit" onClick={handleLogout}>logout</button>
+				</div>
+                
             <div className='test' ref={componentRef}>
                 <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
                     ease elves
                 </h11>
+
+               
 
                 <div className="flex-wrap">
                     <div className="image-container">

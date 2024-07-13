@@ -15,6 +15,27 @@ body1 {
     padding-right: 100px;
     
   }
+
+  .logout {
+    position: absolute;
+    left: 88%;
+    top: 7%;
+    width: 100px; 
+    height: 50px; 
+    cursor: pointer;
+    color: #a0482d;
+    background-color: #E5BEBE;
+    border-radius: 20px;
+    margin-right: 2px ;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 1.2rem;
+  }
+  
+  .logout:hover {
+    opacity: 0.8; 
+  }
   
   
   h11 {
@@ -105,8 +126,18 @@ body1 {
     height: auto;
   }
   
-  .cont{
-   
+  #con .input-box1 {
+    width: 2000px; /* Calculates width minus margins */
+    max-width: 500%;
+    width: auto;
+    height: 75px; /* Adjust height as needed */
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%); /* Center align the element */
+    background-color: rgba(171,155,150,0.2);
+    padding: 5px;
+    border: 1px solid #ccc;
   }
   
   .input-box1 {
