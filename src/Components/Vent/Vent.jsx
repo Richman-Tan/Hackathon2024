@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Vent.css';
 import buttonLeft from './buttonLeft.png';
 import buttonRight from './buttonRight.png';
 import buttonAdd from './buttonAdd.png';
+import speechBubble from './speechBubble.png';
 import { useNavigate } from 'react-router-dom';
 
 const Vent = () => {
+
+  const [speechText, setSpeechText] = useState('');
+
+  const handleAddText = () => {
+      setSpeechText('Text added on button click.'); // Replace with text
+  };
 
   const navigate = useNavigate();
 
@@ -31,14 +38,26 @@ const Vent = () => {
                 alt="Button" 
                 className="buttonRight" 
             />
+            <div className="speechBubble">
+            <img 
+                src={speechBubble} 
+                alt="Button" 
+                className="speechBubble"
+            />
+            </div>
             <img 
                 src={buttonAdd} 
                 alt="Button" 
-                className="buttonAdd" 
+                className="buttonAdd"
+                onClick = {handleAddText}
             />
 
-            <div class= "input-box">
-                <input type="text" placeholder='I`m worried about... '/>
+            <div className="input-box input-box1">
+                <input type="text" placeholder="I'm worried about..." />
+            </div>
+
+            <div className = "texts">
+                <p>alfred</p>
             </div>
 
             <div className = "link">

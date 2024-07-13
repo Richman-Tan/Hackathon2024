@@ -1,18 +1,27 @@
 .title {
-font-size: 4em;
-font-weight: bold;
-position: absolute;
-left: 10%;
-top: 10%;
+font-size: 3.75rem;
+position: fixed;
+top: 10px; /* Adjust units as needed */
+left: 50px; /* Adjust units as needed */
 color: #778D63;
 }
 
 .buttonLeft {
   position: absolute;
   left: 60%;
-  top: 16%;
+  top: 6%;
   width: 35px; 
   height: 35px; 
+  cursor: pointer;
+  border: none; 
+}
+
+.speechBubble {
+  position: absolute;
+  left: 9%;
+  top: 30%;
+  width: 300px; 
+  height: 200px; 
   cursor: pointer;
   border: none; 
 }
@@ -20,7 +29,7 @@ color: #778D63;
 .buttonRight {
   position: absolute;
   left: 80%;
-  top: 16%;
+  top: 6%;
   width: 35px; 
   height: 35px; 
   cursor: pointer;
@@ -29,10 +38,10 @@ color: #778D63;
 
 .buttonAdd {
   position: absolute;
-  left: 85%;
-  top: 60%;
-  width: 100px; 
-  height: 100px; 
+  left: 78%;
+  top: 83.3%;
+  width: 80px; 
+  height: 80px; 
   cursor: pointer;
   border: none; 
 }
@@ -52,7 +61,7 @@ color: #778D63;
 .logout {
   position: absolute;
   left: 88%;
-  top: 16%;
+  top: 6%;
   width: 100px; 
   height: 30px; 
   cursor: pointer;
@@ -66,24 +75,32 @@ color: #778D63;
   opacity: 0.8; 
 }
 
-.input-box2 {
-  position: fixed; /* Fixes the position at the bottom of the page */
-  bottom: 20px; /* Adds space from the bottom edge */
-  left: 20px; /* Adds space from the left edge */
-  right: 20px; /* Adds space from the right edge */
-  border-radius: 15px; /* Rounds all corners */
-  font-size: 16px; /* Increased font size */
-  padding: 10px; /* Padding inside the div */
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
-  background-color: rgba(171, 155, 150, 0.2); /* Background color */
-  margin: 0; /* Reset any default margin */
-  text-align: left; /* Aligns text to the left */
-  overflow-wrap: break-word; /* Breaks words that are too long */
-  word-wrap: break-word; /* Ensures compatibility for older browsers */
-  overflow: auto; /* Adds scrollbar if content overflows */
-  height: auto; /* Ensures height adjusts to content */
-  min-height: 50px; /* Sets a minimum height for the div */
+/* Vent.css */
+
+.input-box1 {
+  background-color: #ffffff;
+  padding: 5px;
+  height: 100px;
+  position: absolute;
+  left: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
 }
+
+#con .input-box1 {
+  width: 2000px; /* Calculates width minus margins */
+  max-width: 500%;
+  width: auto;
+  height: 75px; /* Adjust height as needed */
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  transform: translate(-50%, -50%); /* Center align the element */
+  background-color: rgba(171,155,150,0.2);
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+
 
 .link p a:hover{
   text-decoration: underline;
@@ -91,7 +108,7 @@ color: #778D63;
 
 .link {
   position: fixed;
-  bottom: 0px; /* Adjust as needed */
+  bottom: 4%; /* Adjust as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%);
   text-align: center; /* Center text within link */
@@ -107,4 +124,14 @@ color: #778D63;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+
+.texts {
+  position: absolute;
+  top: 20%; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  text-align: center; /* Center text horizontally */
+  font-size: 1.5em; /* Adjust font size as needed */
+  color: #333; /* Adjust text color */
 }
