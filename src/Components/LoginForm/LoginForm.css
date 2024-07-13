@@ -7,22 +7,18 @@
 }
 
 .centered-title {
-    margin-bottom: 140px;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    color: #778D63;
-  }
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	color: #778D63;
+}
 
-  .centered-subtitle {
-    position: absolute;
-    top: 23%;
-    left: 41%;
-
-    font-weight: bold;
-    text-align: center;
-    color: #AB9B96;
-  }
+.centered-subtitle {
+	font-size: 2em;
+	margin-bottom: 200px;
+	text-align: center;
+	color: #AB9B96;
+}
 
 .wrapper h1{
     font-size: 36px;
