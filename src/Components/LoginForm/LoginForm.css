@@ -17,7 +17,7 @@
   .centered-subtitle {
     position: absolute;
     top: 23%;
-    left: 30%;
+    left: 41%;
 
     font-weight: bold;
     text-align: center;
@@ -116,4 +116,15 @@
 
 .register-link p a:hover{
     text-decoration: underline;
+}
+
+.wrapper{
+    width: 420px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+body {
+  background-image: url("background.png");
 }
