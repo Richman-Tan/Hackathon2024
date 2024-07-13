@@ -2,7 +2,7 @@
 .title {
 font-size: 3.75rem;
 position: fixed;
-top: 10px; /* Adjust units as needed */
+top: 30px; /* Adjust units as needed */
 left: 50px; /* Adjust units as needed */
 color: #778D63;
 }
@@ -22,8 +22,8 @@ color: #778D63;
 }
 .delete {
 	position: absolute;
-  right: 17%;
-  top: 63%;
+  right: 17.5%;
+  top: 72%;
   cursor: pointer;
   border: none; 
 }
@@ -58,8 +58,18 @@ color: #778D63;
 
 .buttonLeft {
   position: absolute;
-  left: 60%;
-  top: 6%;
+  left: 65.5%;
+  top: 70%;
+  width: 35px; 
+  height: 35px; 
+  cursor: pointer;
+  border: none; 
+}
+
+.buttonRight {
+  position: absolute;
+  left: 93%;
+  top: 70%;
   width: 35px; 
   height: 35px; 
   cursor: pointer;
@@ -83,16 +93,6 @@ color: #778D63;
   right: 10px;
   font-size: 14px;
   color: #333;
-}
-
-.buttonRight {
-  position: absolute;
-  left: 80%;
-  top: 6%;
-  width: 35px; 
-  height: 35px; 
-  cursor: pointer;
-  border: none; 
 }
 
 .buttonAdd {
@@ -120,21 +120,24 @@ color: #778D63;
 .logout {
   position: absolute;
   left: 88%;
-  top: 6%;
+  top: 7%;
   width: 100px; 
-  height: 30px; 
+  height: 50px; 
   cursor: pointer;
+  color: #a0482d;
   background-color: #E5BEBE;
   border-radius: 20px;
   margin-right: 2px ;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 1.2rem;
 }
 
 .logout:hover {
   opacity: 0.8; 
 }
 
-/* Vent.css */
 
 .input-box1 {
   background-color: #ffffff;
@@ -143,6 +146,12 @@ color: #778D63;
   position: absolute;
   left: 20px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
+  font-size: 1.2em;
+}
+
+.input-box1 button {
+  margin-right: 10px;
+  color: #d25f5f;
 }
 
 #con .input-box1 {
@@ -152,7 +161,7 @@ color: #778D63;
   height: 75px; /* Adjust height as needed */
   position: absolute;
   left: 50%;
-  top: 86%;
+  top: 85%;
   transform: translate(-50%, -50%); /* Center align the element */
   background-color: rgba(171,155,150,0.2);
   padding: 5px;
@@ -175,10 +184,13 @@ color: #778D63;
   width: auto; /* Adjust width as needed */
   cursor: pointer; /* Change cursor to pointer on hover */
   display: inline-block; /* Ensures the box expands with the content */
+  width: 80px;
+  color: #f0e7d8;
+  font-size: 1.2em;
 }
 
 .link2 p a:hover{
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .link2 {
@@ -187,6 +199,9 @@ color: #778D63;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  text-decoration: underline;
+  color: #778D63;
+  font-size: 1.2em;
 }
 
 .texts {
@@ -197,4 +212,5 @@ color: #778D63;
   text-align: center; /* Center text horizontally */
   font-size: 1.5em; /* Adjust font size as needed */
   color: #333; /* Adjust text color */
+  font-size: 1.8em;
 }

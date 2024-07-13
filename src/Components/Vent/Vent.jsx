@@ -20,6 +20,10 @@ const Vent = () => {
 		navigate('/');
 	};
 
+  const handleCustomise = () => {
+    navigate('/customise');
+  };
+
 	const handleAddText = () => {
 		if (inputText.trim() !== '') {
 			const updatedFeelings = [...feelings];
@@ -115,12 +119,6 @@ const Vent = () => {
 						className="speechBubble"
 					/>
 				</div>
-				<img
-					src={buttonAdd}
-					alt="Add Button"
-					className="buttonAdd"
-					onClick={handleAddText}
-				/>
 
 				<div className="input-box input-box1">
 					<input
@@ -130,7 +128,7 @@ const Vent = () => {
 						onChange={(e) => setInputText(e.target.value)}
 					/>
 					<button type="button" onClick={handleVoiceInput}>
-						{isRecording ? 'Stop' : 'Start'}
+						{isRecording ? 'stop' : 'record'}
 					</button>
 				</div>
 
@@ -139,11 +137,11 @@ const Vent = () => {
 				</div>
 
 				<div className="button button1">
-					<button type="submit" onClick={handleAddText}>Send</button>
+					<button type="submit" onClick={handleAddText}>send</button>
 				</div>
 
 				<div className="link2">
-					<p><a href="#" onClick={() => setIsEditing(true)}>edit</a></p>
+					<p><a href="#" onClick={handleCustomise} >edit</a></p>
 				</div>
 			</div>
 
