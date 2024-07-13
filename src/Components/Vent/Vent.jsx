@@ -3,17 +3,22 @@ import './Vent.css';
 import buttonLeft from './buttonLeft.png';
 import buttonRight from './buttonRight.png';
 import buttonAdd from './buttonAdd.png';
-
-
+import { useNavigate } from 'react-router-dom';
 
 const Vent = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+      navigate('/'); 
+  };
     return (
 
-        <div>
+        <div id = "con">
             <p className="title">ease elves</p>
             
             <div className ="logout">
-              <button type = "submit">logout</button>
+              <button type = "submit" onClick={handleLogout}>logout</button>
             </div>
 
             <img 
@@ -31,7 +36,8 @@ const Vent = () => {
                 alt="Button" 
                 className="buttonAdd" 
             />
-            <div className= "input-box2">
+
+            <div class= "input-box">
                 <input type="text" placeholder='I`m worried about... '/>
             </div>
 
