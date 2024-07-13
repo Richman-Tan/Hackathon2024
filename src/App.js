@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import LoginForm from './Components/LoginForm/LoginForm';
 import Customise from "./Customise.js";
-import Vent from "./Vent.js";
+import Vent from "./Components/Vent/Vent.jsx";
 
 export default function App() {
 	return (
