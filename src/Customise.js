@@ -19,6 +19,7 @@ import buttoncolourright from './assets/buttons/buttoncolourright.png';
 import buttonfaceright from './assets/buttons/buttonfaceright.png';
 import buttonhairright from './assets/buttons/buttonhairright.png';
 import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
+import { FaRegShareSquare } from "react-icons/fa";
 
 const Customise = () => {
     const navigate = useNavigate();
@@ -130,9 +131,16 @@ const Customise = () => {
         
             <div className="button buttonsave">
                 <button onClick={handleExport}>
-                    Export As Image 
+                <FaRegShareSquare />
                 </button>
             </div>
+
+            <div className="button-row">
+                <button>Button 1 </button>
+                <button>Button 2</button>
+                <button>Button 3</button>
+                <button>Button 4</button>
+            </div>  
 
             <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
                 <input
