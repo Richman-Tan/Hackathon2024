@@ -6,6 +6,10 @@
     padding: 30px 40px;
 }
 
+.login-container {
+    text-align: center; /* Center align all contents */
+  }
+
 .centered-title {
 	font-size: 5em;
 	text-align: center;
@@ -100,6 +104,10 @@
     font-size: 18px;
     color: #778D63;
     font-weight: 700;
+}
+
+.button:hover{
+  opacity: 0.8;
 }
 
 .wrapper .register-link{
