@@ -153,13 +153,13 @@ const Customise = () => {
             </div>
 
 
-            <div className="button buttonsave" style={{ position: 'fixed', top: 650, right: 270, zIndex: 1000 }}>
+            <div className="button buttonsave" style={{ position: 'fixed', top: 650, right: 390, zIndex: 1000 }}>
                 <button onClick={handleExport}>
                     <FaRegShareSquare /> Share
                 </button>
             </div>
             
-            <div className="nextPage" style={{ position: 'fixed', top: 637, right: 385, zIndex: 1000 }}>
+            <div className="nextPage" style={{ position: 'fixed', top: 637, right: 270, zIndex: 1000 }}>
                 <button type="submit" onClick={handleNextPage}>Next</button>
             </div>
 
