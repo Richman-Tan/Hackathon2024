@@ -31,7 +31,7 @@ const Vent = () => {
                 alt="Button" 
                 className="buttonAdd" 
             />
-            <div className= "input-box">
+            <div className= "input-box2">
                 <input type="text" placeholder='I`m worried about... '/>
             </div>
 
