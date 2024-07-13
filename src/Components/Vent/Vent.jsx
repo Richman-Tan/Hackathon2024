@@ -106,9 +106,11 @@ const Vent = () => {
 				</div>
 			</div>
 			<div className="left-side">
-				<p className="title">ease elves</p>
+              <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
+                    ease elves
+                </h11>
 
-				<div className="logout">
+				<div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}>
 					<button type="submit" onClick={handleLogout}>logout</button>
 				</div>
 

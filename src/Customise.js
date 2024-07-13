@@ -153,13 +153,13 @@ const Customise = () => {
             </div>
 
 
-            <div className="button buttonsave">
+            <div className="button buttonsave" style={{ position: 'fixed', top: 650, right: 270, zIndex: 1000 }}>
                 <button onClick={handleExport}>
                     <FaRegShareSquare /> Share
                 </button>
             </div>
             
-            <div className="nextPage" style={{ position: 'fixed', top: 560, right: 280, zIndex: 1000 }}>
+            <div className="nextPage" style={{ position: 'fixed', top: 637, right: 385, zIndex: 1000 }}>
                 <button type="submit" onClick={handleNextPage}>Next</button>
             </div>
 
@@ -179,7 +179,7 @@ const Customise = () => {
                 </div>
             </div>
 
-            <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
+            <div className="input-box2" style={{ position: 'fixed', bottom: '15px', left: '50%', transform: 'translateX(-50%)' }}>
                 <input
                     type="text"
                     placeholder='My Name'
