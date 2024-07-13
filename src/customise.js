@@ -33,7 +33,7 @@ const Customise = () => {
 
     return (
         <div className='wrapper1'>
-            <h11 className="text-4xl" style={{ position: 'fixed', top: 0, left: 50 }}>
+            <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
                 ease elves
             </h11>
 
