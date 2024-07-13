@@ -6,6 +6,24 @@
     padding: 30px 40px;
 }
 
+.centered-title {
+    margin-bottom: 140px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #778D63;
+  }
+
+  .centered-subtitle {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+
+    font-weight: bold;
+    text-align: center;
+    color: #AB9B96;
+  }
+
 .wrapper h1{
     font-size: 36px;
     text-align: center;
