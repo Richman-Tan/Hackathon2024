@@ -8,14 +8,14 @@
 
 .centered-title {
 	font-size: 5em;
-	font-weight: bold;
 	text-align: center;
 	color: #778D63;
 }
 
+
 .centered-subtitle {
 	font-size: 2em;
-	margin-bottom: 200px;
+	margin-bottom: -30px;
 	text-align: center;
 	color: #AB9B96;
 }
@@ -74,6 +74,11 @@
     margin-right: 4px;
 }
 
+.remember-forgot label {
+    color: #AB9B96; /* Desired color */
+  }
+  
+
 .remember-forgot a{
     color: #AB9B96;
     text-decoration: none;
@@ -115,11 +120,33 @@
 
 .wrapper{
     width: 420px;
+    height: auto;
     color: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
+    padding: 0px 40px;
 }
 
 body {
   background-image: url("background.png");
 }
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 200%; /* Ensure the image does not exceed its container width */
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */; /* Set a maximum height for the image */
+    margin-bottom: -40px; /* Adjusted margin */
+  }
+
+
+/* LoginForm.css */
+.register-link p {
+    color: #AB9B96; /* Desired color */
+  }
+  
+
