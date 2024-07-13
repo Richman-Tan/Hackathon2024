@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Components/Customise/style.css';
 import bodyImg from './assets/IMG_0773.PNG';
 import face1 from './assets/faces/IMG_0775.PNG';
@@ -19,6 +20,12 @@ import buttonhairright from './assets/buttons/buttonhairright.png';
 import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
 
 const Customise = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/vent'); 
+};
 
     const hairs = [hair1, hair2]
     const faces =[ face1, face2]
@@ -62,15 +69,15 @@ const Customise = () => {
                     <img src={outfits[outfitIdx]} alt="outfit" />
                 </div>
 
-                <div className="buttonface">
-                    <button id="nextface" onClick={nextface}>
-                        <img src={faceButtonImg} alt="next face" />
-                    </button>
-                </div>
-
                 <div className="buttonhair">
                     <button id="nexthair" onClick={nexthair}>
                         <img src={hairButtonImg} alt="next hair" />
+                    </button>
+                </div>
+
+                <div className="buttonface">
+                    <button id="nextface" onClick={nextface}>
+                        <img src={faceButtonImg} alt="next face" />
                     </button>
                 </div>
 
@@ -89,17 +96,20 @@ const Customise = () => {
             </div>
 
             <div className="flex-wrap flex-wrap2">
+
+            <div className="buttonhairright">
+                    <button id="nexthair" onClick={nexthair}>
+                        <img src={buttonhairright} alt="next hair" />
+                    </button>
+                </div>
+
             <div className="buttonfaceright">
                     <button id="nextface" onClick={nextface}>
                         <img src={buttonfaceright} alt="next face" />
                     </button>
                 </div>
 
-                <div className="buttonhairright">
-                    <button id="nexthair" onClick={nexthair}>
-                        <img src={buttonhairright} alt="next hair" />
-                    </button>
-                </div>
+
 
                 <div className="buttonoutfitright">
                     <button id="nextoutfit" onClick={nextoutfit}>
@@ -115,7 +125,7 @@ const Customise = () => {
             </div>
 
             <div className = "button buttonsave">
-                    <button type = "submit">Save</button>
+                    <button type = "submit" onClick={handleClick}>Save</button>
             </div>
 
             <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>

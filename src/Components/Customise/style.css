@@ -24,12 +24,10 @@ h11 {
     display: flex;
     justify-content: center;
     margin-top: 10px; /* Adjust margin as needed */
-    
-   
 }
 
 .image-container img {
-    /* max-width: 100%;  */
+    max-width: 350px;  
     height: auto; /* Maintain aspect ratio */
     display: block;
     position: absolute;
@@ -37,7 +35,7 @@ h11 {
 
 .buttonface {
     position: relative;
-    top: -20px;
+    top: -10px;
     left: -150px;
     width: 50px;
     height: auto;
@@ -45,14 +43,15 @@ h11 {
 
 .buttonhair{
     position: relative;
-    top: -20px;
+    top: -10px;
     left: -150px;
     width: 50px;
     height: auto;
 }
+
 .buttonoutfit{
     position: relative;
-    top: -20px;
+    top: -10px;
     left: -150px;
     width: 50px;
     height: auto;
@@ -61,7 +60,7 @@ h11 {
 
 .buttoncolour{
     position: relative;
-    top: -20px;
+    top: -10px;
     left: -150px;
     width: 50px;
     height: auto;
@@ -69,7 +68,7 @@ h11 {
 
 .buttoncolourright {
     position: relative;
-    top: -275px;
+    top: -265px;
     left: 150px;
     width: 50px;
     height: auto;
@@ -77,7 +76,7 @@ h11 {
 
 .buttonfaceright{
     position: relative;
-    top: -275px;
+    top: -265px;
     left: 150px;
     width: 50px;
     height: auto;
@@ -85,7 +84,7 @@ h11 {
 
 .buttonhairright{
     position: relative;
-    top: -275px;
+    top: -265px;
     left: 150px;
     width: 50px;
     height: auto;
@@ -93,7 +92,7 @@ h11 {
 
 .buttonoutfitright{
     position: relative;
-    top: -275px;
+    top: -265px;
     left: 150px;
     width: 50px;
     height: auto;
@@ -159,10 +158,13 @@ h11 {
 }
 
 .buttonsave{
+  position: absolute;
+  bottom: 50px;
     text-decoration: underline;
     color: #778d63;
 }
 
 .buttonsave:hover{
     color: #778d63;
+    cursor: pointer;
 }
