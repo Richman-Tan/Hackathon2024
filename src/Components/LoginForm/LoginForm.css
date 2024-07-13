@@ -145,10 +145,15 @@ body {
 }
 
 .image-container img {
-    max-width: 200%; /* Ensure the image does not exceed its container width */
-    width: 300px;
+    max-width: 300%; /* Ensure the image does not exceed its container width */
+    width: 500px;
     height: auto; /* Maintain aspect ratio */; /* Set a maximum height for the image */
     margin-bottom: -40px; /* Adjusted margin */
+  }
+
+  .image-container {
+    max-width: 300%; /* Ensure the image does not exceed its container width */
+    height: auto; /* Maintain aspect ratio */; /* Set a maximum height for the image */
   }
 
 
@@ -157,4 +162,5 @@ body {
     color: #AB9B96; /* Desired color */
   }
   
+
 

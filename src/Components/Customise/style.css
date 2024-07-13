@@ -24,16 +24,23 @@ h11 {
     display: flex;
     justify-content: center;
     margin-top: 50px; /* Adjust margin as needed */
+   
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure the image does not exceed its container width */
+    /* max-width: 100%;  */
     height: auto; /* Maintain aspect ratio */
     display: block;
+    position: absolute;
+    
+}
+
+.buttonBox {
+    position: relative;
+    top: -100px;
 }
 
 .input-box1 {
-    position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -48,22 +55,19 @@ h11 {
     justify-content: center;
 }
 
+
+
 .input-box1 input {
     width: calc(100% - 40px); /* Adjust input width */
     height: 100%;
+    top:5px;
     background: transparent;
     border: none;
+        color: #AB9B96;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     padding: 20px;
+
 }
 
 
-/* Absolute positioned elements */
-#eyes, #ears, #nose, #mouth, #clothes {
-    position: absolute;
-    width: 794px;   /* width of actual image */
-    height: 1123px; /* height of actual image */
-    /* Add background-image and other styles as needed */
-}

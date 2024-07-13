@@ -10,34 +10,39 @@ import outfit2 from './assets/outfits/IMG_0780.PNG';
 
 const Customise = () => {
 
-    const [faceImg, setFaceImg] = useState(face1);
-    const [hairImg, setHairImg] = useState(hair1);
-    const [outfitImg, setOutfitImg] = useState(outfit1);
+    const hairs = [hair1, hair2]
+    const faces =[ face1, face2]
+    const outfits =[outfit1,outfit2]
+
+    const [faceIdx, setFaceIdx]= useState(0);
+    const [hairIdx, setHairIdx] = useState(0);
+    const [outfitIdx, setOutfitIdx] = useState(0);
+
 
     const nextface = () => {
-        setFaceImg(prevFaceImg => prevFaceImg === face1 ? face2 : face1);
+        setFaceIdx((faceIdx + 1) % faces.length)
     };
 
     const nexthair = () => {
-        setHairImg(prevHairImg => prevHairImg === hair1 ? hair2 : hair1);
+        setHairIdx((hairIdx + 1) % hairs.length)
     };
 
     const nextoutfit = () => {
-        setOutfitImg(prevOutfitImg => prevOutfitImg === outfit1 ? outfit2 : outfit1);
+        setOutfitIdx((outfitIdx + 1) % outfits.length)
     };
 
     return (
         <div className='wrapper1'>
-            <h11 className="text-4xl" style={{ position: 'fixed', top: 0, left: 50 }}>
+            <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
                 ease elves
             </h11>
 
             <div className="flex-wrap">
                 <div className="image-container">
                     <img src={bodyImg} alt="body" />
-                    <img src={faceImg} alt="face" />
-                    <img src={hairImg} alt="hair" />
-                    <img src={outfitImg} alt="outfit" />
+                    <img src={faces[faceIdx]} alt="face" />
+                    <img src={hairs[hairIdx]} alt="hair" />
+                    <img src={outfits[outfitIdx]} alt="outfit" />
                 </div>
 
                 <div className="buttonBox">

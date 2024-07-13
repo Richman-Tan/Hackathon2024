@@ -17,8 +17,8 @@ const LoginForm = () => {
     <div className="login-container">
         <h1 className="centered-title">ease elves</h1>
         <h3 className="centered-subtitle">ease your mind with a trustworthy elf</h3>
-        <div className="image-container">
-            <img src = {FaceImage} alt = "Face"/>
+        <div className="image-container-2">
+            <img style={{width: "250px", position: "relative", top: "20px"}} src = {FaceImage} alt = "Face"/>
         </div>
         <div className = 'wrapper'> 
             <form action="">
