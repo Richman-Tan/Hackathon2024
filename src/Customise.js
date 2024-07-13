@@ -52,7 +52,7 @@ const Customise = () => {
                 </div>
             </div>
 
-            <div className="input-box1" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
+            <div className="input-box2" style={{ position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
                 <input type="text" placeholder='name' required />
             </div>
         </div>
