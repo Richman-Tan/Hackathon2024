@@ -1,179 +1,180 @@
 body1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 .wrapper1 {
-    position: relative;
-    padding: 20px; /* Add padding to create space around elements */
-    
+  position: relative;
+  padding: 20px; /* Add padding to create space around elements */
+  
+}
+
+.test{
+  padding-left:100px;
+  padding-right: 100px;
+  
 }
 
 
 h11 {
-    font-size: 5em;
-    color: #778d63;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 20px; /* Optional: Add margin for spacing from the edge */
+  font-size: 5em;
+  color: #778d63;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px; /* Optional: Add margin for spacing from the edge */
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust margin as needed */
+  
+ 
 }
 
 .image-container img {
-    max-width: 350px;  
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    position: absolute;
+  /* max-width: 100%;  */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  position: absolute;
 }
 
 .buttonface {
-    position: relative;
-    top: -10px;
-    left: -150px;
-    width: 50px;
-    height: auto;
+  position: relative;
+  top: 110px;
+  left: -150px;
+  width: 50px;
+  height: auto;
 }
 
 .buttonhair{
-    position: relative;
-    top: -10px;
-    left: -150px;
-    width: 50px;
-    height: auto;
+  position: relative;
+  top: 60px;
+  left: -150px;
+  width: 50px;
+  height: auto;
 }
-
 .buttonoutfit{
-    position: relative;
-    top: -10px;
-    left: -150px;
-    width: 50px;
-    height: auto;
+  position: relative;
+  top: 160px;
+  left: -150px;
+  width: 50px;
+  height: auto;
 
 }
 
 .buttoncolour{
-    position: relative;
-    top: -10px;
-    left: -150px;
-    width: 50px;
-    height: auto;
+  position: relative;
+  top: 210px;
+  left: -150px;
+  width: 50px;
+  height: auto;
 }
 
 .buttoncolourright {
-    position: relative;
-    top: -265px;
-    left: 150px;
-    width: 50px;
-    height: auto;
+  position: relative;
+  top: -50px;
+  left: 150px;
+  width: 50px;
+  height: auto;
 }
 
-.buttonfaceright{
-    position: relative;
-    top: -265px;
-    left: 150px;
-    width: 50px;
-    height: auto;
+.buttonfaceright {
+  position: relative;
+  top: -150px;
+  left: 150px;
+  width: 50px;
+  height: auto;
 }
 
-.buttonhairright{
-    position: relative;
-    top: -265px;
-    left: 150px;
-    width: 50px;
-    height: auto;
+.buttonhairright {
+  position: relative;
+  top: -200px;
+  left: 150px;
+  width: 50px;
+  height: auto;
 }
 
-.buttonoutfitright{
-    position: relative;
-    top: -265px;
-    left: 150px;
-    width: 50px;
-    height: auto;
+.buttonoutfitright {
+  position: relative;
+  top: -100px;
+  left: 150px;
+  width: 50px;
+  height: auto;
+}
+
+.cont{
+ 
 }
 
 .input-box1 {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 400px; /* Limit maximum width */
-    height: 50px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Limit maximum width */
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .input-box1 input {
-    width: calc(100% - 40px); /* Adjust input width */
-    height: 100%;
-    top:5px;
-    background: transparent;
-    border: none;
-        color: #AB9B96;
-    outline: none;
-    border-radius: 40px;
-    padding: 20px;
+  width: calc(100% - 40px); /* Adjust input width */
+  height: 100%;
+  top:5px;
+  background: transparent;
+  border: none;
+      color: #AB9B96;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
 
 }
 
 .input-box2 {
 
-    transform: translateX(-50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 400px; /* Limit maximum width */
-    height: 50px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  transform: translateX(-50%);
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Limit maximum width */
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(171, 155, 150, 0.3); /* Adjust opacity here */
+
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .input-box2 input {
-    width: calc(100% - 40px); /* Adjust input width */
-    height: 100%;
-    top:5px;
-    background: transparent;
-    border: none;
-        color: #AB9B96;
-    outline: none;
-    border-radius: 40px;
-    padding: 20px;
+  width: calc(100% - 40px); /* Adjust input width */
+  height: 100%;
+  top:5px;
+  background: transparent;
+  border: none;
+      color: #AB9B96;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
 
 }
 
 .buttonsave{
-  position: absolute;
-  font-size: 25px;
-  bottom: 50px;
-  left: -15%;
-    text-decoration: underline;
-    color: #778d63;
-    background-color: #CAD7BE;
-    border-radius: 20px;
-    margin-right: 2px ;
-    text-align: center;
-    padding: 10px 35px; /* Adjust padding to make the button bigger */
-    line-height: 1; /* Adjust line height if needed */
-    display: inline-block;
+  text-decoration: underline;
+  color: #778d63;
+  text-align: center;
+  font-size: large;
 }
 
 .buttonsave:hover{
-    color: #778d63;
-    cursor: pointer;
+  color: #778d63;
 }
