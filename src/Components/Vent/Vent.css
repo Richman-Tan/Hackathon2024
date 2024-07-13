@@ -39,7 +39,7 @@ color: #778D63;
 .buttonAdd {
   position: absolute;
   left: 78%;
-  top: 83.3%;
+  top: 80.8%;
   width: 80px; 
   height: 80px; 
   cursor: pointer;
@@ -102,16 +102,22 @@ color: #778D63;
 
 
 
-.link p a:hover{
-  text-decoration: underline;
+.button1 :hover{
+  opacity: 0.8; 
 }
 
-.link {
+.button1 {
   position: fixed;
-  bottom: 4%; /* Adjust as needed */
+  bottom: 2%; /* Adjust as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%);
   text-align: center; /* Center text within link */
+  background-color: #AB9B96; /* Background color of the box */
+  padding: 10px; /* Padding inside the box */
+  border-radius: 20px; /* Rounded corners for the box */
+  width: auto; /* Adjust width as needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: inline-block; /* Ensures the box expands with the content */
 }
 
 .link2 p a:hover{

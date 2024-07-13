@@ -35,7 +35,7 @@ const LoginForm = () => {
                     <a href="#"> Forgot Password?</a>
                 </div>
                 <div className = "button">
-                <button type = "submit" onClick={handleLogin}>Login</button>
+                    <button type = "submit" onClick={handleLogin}>Login</button>
                 </div>
                 <div className = "register-link">
                     <p>Don't have an account? <a href="#">Register</a></p>

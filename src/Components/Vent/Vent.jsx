@@ -60,9 +60,11 @@ const Vent = () => {
                 <p>alfred</p>
             </div>
 
-            <div className = "link">
-                <p><a href="#">This is resolved.</a></p>
+            <div className = "button button1">
+                    <button type = "submit" >Send</button>
             </div>
+
+
             <div className = "link2">
                 <p><a href="#">edit</a></p>
             </div>
