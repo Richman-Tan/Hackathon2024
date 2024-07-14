@@ -22,6 +22,9 @@ import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
 import { FaRegShareSquare } from "react-icons/fa";
 import temp from './assets/buttons/temp.png'
 
+import hair3 from './assets/hairs/IMG_0785.png'
+import outfit3 from './assets/outfits/IMG_0786.png'
+
 const Customise = () => {
     const navigate = useNavigate();
     const [activeButton, setActiveButton] = useState(null); // State to track active button
@@ -40,9 +43,9 @@ const Customise = () => {
     }
 
     const [name, setName] = useState('');
-    const hairs = [hair1, hair2];
+    const hairs = [hair1, hair2, hair3];
     const faces = [face1, face2];
-    const outfits = [outfit1, outfit2];
+    const outfits = [outfit1, outfit2, outfit3];
     const colours = [bodyImg, colour1, colour2];
     const [faceIdx, setFaceIdx] = useState(0);
     const [hairIdx, setHairIdx] = useState(0);
@@ -159,7 +162,7 @@ const Customise = () => {
                 </button>
             </div>
             
-            <div className="nextPage" style={{ position: 'fixed', top: 637, right: 270, zIndex: 1000 }}>
+            <div className="nextPage" style={{ position: 'fixed', top: 663, right: 270, zIndex: 1000 }}>
                 <button type="submit" onClick={handleNextPage}>Next</button>
             </div>
 

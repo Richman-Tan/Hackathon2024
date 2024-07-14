@@ -48,13 +48,14 @@ body1 {
   color: #778D63;
   background-color: #CAD7BE;
   border-radius: 20px;
-  margin-right: 2px;
+  margin-right: 1px;
   display: flex;
   justify-content: center;
   /* Center horizontally */
   align-items: center;
   /* Center vertically */
   font-size: 1.2rem;
+  bottom: 10%;
 }
 
 .nextPage:hover {
@@ -262,6 +263,7 @@ h11 {
   text-align: center;
   font-size: large;
   position: absolute;
+  bottom: -1%;
 }
 
 .buttonsave:hover {

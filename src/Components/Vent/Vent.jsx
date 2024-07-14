@@ -166,7 +166,7 @@ const Vent = () => {
 				</div>
 
 				<div className="texts">
-					<p>alfred</p>
+					<p>elfred</p>
 				</div>
 
 				<div className="button send">
