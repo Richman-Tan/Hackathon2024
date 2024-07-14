@@ -6,9 +6,9 @@ import buttonAdd from './buttonAdd.png';
 import speechBubble from './speechBubble.png';
 import { useNavigate } from 'react-router-dom';
 import colour from '../../assets/colours/colour1.png';
-import face from '../../assets/faces/IMG_0775.PNG'
-import hair from '../../assets/hairs/IMG_0774.PNG'
-import outfit from '../../assets/outfits/IMG_0779.PNG'
+import face from '../../assets/faces/IMG_0775.PNG';
+import hair from '../../assets/hairs/IMG_0774.PNG';
+import outfit from '../../assets/outfits/IMG_0779.PNG';
 
 const Vent = () => {
 	const [inputText, setInputText] = useState('');
@@ -17,6 +17,18 @@ const Vent = () => {
 	const [feelings, setFeelings] = useState([]);
 	const [currentIndex, setCurrentIndex] = useState(-1);
 	const [isEditing, setIsEditing] = useState(false);
+	const [speechBubbleText, setSpeechBubbleText] = useState('');
+
+	const responses = [
+		"It will be okay",
+		"Hang in there",
+		"You got this",
+		"Stay strong",
+		"Things will get better",
+		"Take a deep breath",
+		"You are not alone",
+		"Keep pushing forward"
+	];
 
 	const navigate = useNavigate();
 
@@ -24,9 +36,15 @@ const Vent = () => {
 		navigate('/');
 	};
 
-  const handleCustomise = () => {
-    navigate('/customise');
-  };
+	const handleCustomise = () => {
+		navigate('/customise');
+	};
+
+	const handleAddResponse = () => {
+		const randomIndex = Math.floor(Math.random() * responses.length);
+		setSpeechBubbleText(responses[randomIndex]);
+	};
+
 
 	const handleAddText = () => {
 		if (inputText.trim() !== '') {
@@ -106,9 +124,7 @@ const Vent = () => {
 				</div>
 			</div>
 			<div className="left-side">
-              <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
-                    ease elves
-                </h11>
+				<p className="title">ease elves</p>
 
 				<div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}>
 					<button type="submit" onClick={handleLogout}>logout</button>
@@ -132,6 +148,7 @@ const Vent = () => {
 						alt="Speech Bubble"
 						className="speechBubble"
 					/>
+					<p style={{ position: 'fixed', top: 290, left: 180 }}>{speechBubbleText}</p>
 				</div>
 
 				<div className="input-box input-box1">
@@ -141,7 +158,7 @@ const Vent = () => {
 						value={inputText}
 						onChange={(e) => setInputText(e.target.value)}
 					/>
-					<button type="button" onClick={handleVoiceInput} >
+					<button type="button" onClick={handleVoiceInput} style={{ position: 'fixed', right: 110 }}>
 						{isRecording ? 'stop' : 'record'}
 					</button>
 				</div>
@@ -151,7 +168,7 @@ const Vent = () => {
 				</div>
 
 				<div className="button send">
-					<button type="submit" onClick={handleAddText} style={{ position: 'fixed', top: -105, right: -440, zIndex: 1000 }}>send</button>
+					<button type="submit" onClick={() => { handleAddText(); handleAddResponse(); }} style={{ position: 'fixed', top: -95, right: -280, zIndex: 1000 }}>send</button>
 				</div>
 
 				<div className="link2">
