@@ -1,6 +1,9 @@
 .title {
 font-size: 3.75rem;
 color: #778D63;
+position: absolute;
+top: 2%;
+left: 5%;
 }
 
 .saved-entry {
@@ -92,6 +95,11 @@ color: #778D63;
   color: #333;
 }
 
+.speechBubble p {
+  font-size: 20px;
+}
+
+
 .buttonAdd {
   position: absolute;
   left: 78%;
@@ -100,6 +108,10 @@ color: #778D63;
   height: 80px; 
   cursor: pointer;
   border: none; 
+}
+
+.responses{
+  font-size: 3em;
 }
 
 .buttonLeft:hover {
@@ -191,7 +203,7 @@ color: #778D63;
 
 .link2 {
   position: relative;
-  bottom: -480px; /* Adjust this value as needed */
+  bottom: -590px; /* Adjust this value as needed */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;

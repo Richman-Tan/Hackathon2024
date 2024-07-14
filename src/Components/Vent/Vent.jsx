@@ -30,6 +30,8 @@ const Vent = () => {
 		"Keep pushing forward"
 	];
 
+	
+
 	const navigate = useNavigate();
 
 	const handleLogout = () => {

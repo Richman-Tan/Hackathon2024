@@ -174,8 +174,8 @@ const Customise = () => {
                 <div className={`button-item ${activeButton === 'Sassy' ? 'active' : ''}`} onClick={() => handleButtonClick('Sassy')}>
                     <button className="btn">Sassy</button>
                 </div>
-                <div className={`button-item ${activeButton === 'Other' ? 'active' : ''}`} onClick={() => handleButtonClick('Other')}>
-                    <button className="btn">Other</button>
+                <div className={`button-item ${activeButton === 'Angry' ? 'active' : ''}`} onClick={() => handleButtonClick('Angry')}>
+                    <button className="btn">Angry</button>
                 </div>
             </div>
 
