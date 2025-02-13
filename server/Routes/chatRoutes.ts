@@ -3,10 +3,10 @@ import {getChatHistory, createChatMessage, updateChatMessage, deleteChatMessage}
 
 const chatRoutes= Router();
 
-chatRoutes.get("/", getChatHistory);
-chatRoutes.post("/", createChatMessage);
-chatRoutes.delete("/", deleteChatMessage);
-chatRoutes.patch("/", updateChatMessage);
+chatRoutes.get("/:elfId/chat", getChatHistory);
+chatRoutes.post("/:elfId/chat", createChatMessage);
+chatRoutes.put("/chat/:chatId", updateChatMessage);
+chatRoutes.delete("/chat/:chatId", deleteChatMessage);
 
 export default chatRoutes;
 
