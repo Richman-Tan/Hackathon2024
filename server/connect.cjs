@@ -2,6 +2,7 @@ const { MongoClient, Collection } = require('mongodb');
 require('dotenv').config({path: './config.env'});
 
 async function main() {
+  // TO DO add mongoose stuff??/
 
     const Db = process.env.Atlas_URI;
     const client = new MongoClient(Db);
