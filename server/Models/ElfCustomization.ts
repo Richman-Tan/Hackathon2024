@@ -6,6 +6,7 @@ interface IElfCustomization extends Document {
   face: string;
   outfit: string;
   colour: string;
+  elfId: string;
 }
 
 const ElfCustomizationSchema: Schema = new Schema({
@@ -14,6 +15,7 @@ const ElfCustomizationSchema: Schema = new Schema({
   face: {type:String, required: true},
   outfit: {type:String, required: true},
   colour: {type:String, required: true},
+  elfId: {type:String, required: true, unique: true},
 });
 
 const ElfCustomization = mongoose.model<IElfCustomization>('ElfCustomization', ElfCustomizationSchema);
