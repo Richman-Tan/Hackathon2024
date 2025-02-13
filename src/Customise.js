@@ -21,6 +21,7 @@ import buttonhairright from './assets/buttons/buttonhairright.png';
 import buttonoutfitright from './assets/buttons/buttonoutfitright.png';
 import { FaRegShareSquare } from "react-icons/fa";
 import temp from './assets/buttons/temp.png'
+// import ElfAvatar from './Components/Elf/ElfAvatar';
 
 import hair3 from './assets/hairs/IMG_0785.png'
 import outfit3 from './assets/outfits/IMG_0786.png'
