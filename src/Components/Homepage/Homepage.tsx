@@ -10,6 +10,7 @@ const Homepage = () => {
 	};
 
 	const handleEdit = () => {
+		// one edit, you can edit the clothes or delete ("ive resolved this")
 	};
 
 	const handleNewElf = () => {
@@ -18,9 +19,9 @@ const Homepage = () => {
 
 	return (
 		<div id="con">
-			<h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
+			<h1 className="text-6xl" style={{ position: 'fixed', top: 35, left: 65, color: "#778D63" }}>
 				ease elves
-			</h11>
+			</h1>
 
 			<div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}>
 				<button type="submit" onClick={handleLogout}>logout</button>
