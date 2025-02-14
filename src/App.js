@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import LoginForm from './Components/LoginForm/LoginForm';
 import Customise from "./Customise.js"; // Fix the file name casing here
 import Vent from "./Components/Vent/Vent.jsx";
+import Homepage from "./Components/Homepage/Homepage.jsx";
 
 export default function App() {
 	return (
@@ -12,6 +13,9 @@ export default function App() {
 				<Routes>
 					<Route path="/"
 						element={<LoginForm />} />
+
+					<Route path="/homepage"
+						element={<Homepage />} />
 
 					<Route path="/customise"
 						element={<Customise />} />

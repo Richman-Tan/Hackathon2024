@@ -10,7 +10,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-      navigate('/customise'); 
+      navigate('/homepage'); 
   };
 
   return (
