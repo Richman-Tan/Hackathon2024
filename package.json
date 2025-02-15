@@ -9,6 +9,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "framer-motion": "^12.4.3",
     "hackathon": "file:",
     "mongodb": "^6.13.0",
     "mongoose": "^8.10.0",
