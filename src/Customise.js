@@ -81,23 +81,37 @@ const Customise = () => {
     };
 
     return (
-        <div className='wrapper1'>
-            <div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}>
+        // <div className='wrapper1'>
+        <div className="wrapper1 bg-white">
+            {/* <div className="logout" style={{ position: 'fixed', top: 40, right: 20, zIndex: 1000 }}> */}
+            <div className="fixed bg-[#E5BEBE] text-[#a0482d] rounded-3xl w-24 h-12 items-center justify-center flex text-xl top-9 right-10">
                 <button type="submit" onClick={handleLogout}>logout</button>
             </div>
 
-            <div className='test' ref={componentRef}>
-                <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}>
+            {/* <div className='test' ref={componentRef}> */}
+            <div className="test bg-yellow-300" ref={componentRef}>
+                {/* <h11 className="text-6xl" style={{ position: 'fixed', top: 10, left: 50 }}> */}
+                <h1 className="text-6xl fixed top-5 left-10 text-[#778D63]">
                     ease elves
-                </h11>
+                </h1>
 
-                <h2 className="text-3xl" style={{ position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', color: '#333'} }>
-                    {name || 'New Elf'}
-                </h2>
+                <div className="fixed top-20">
+                    {/* <h2 className="text-3xl" style={{ position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', color: '#333'} }> */}
+                    <h2 className="text-3xl inline-block">
+                        {name || 'New Elf'}
+                    </h2>
 
-                <div className="flex-wrap">
-                    <div className="image-container">
-                        <img src={colours[colourIdx]} alt="colour" />
+                    {/* <div className="button buttonsave" style={{ position: 'fixed', top: 650, right: 390, zIndex: 1000 }}> */}
+                    <div className="text-xl hover:text-white py-2 px-3 hover:bg-[#778D63] rounded-full inline-block ml-1.5">
+                        <button onClick={handleExport}>
+                            <FaRegShareSquare />
+                        </button>
+                    </div>
+                </div>
+
+                <div className="flex-wrap bg-green-300">
+                    <div className="image-container flex justify-center mt-[10px] bg-blue-300">
+                        <img src={colours[colourIdx]} alt="colour" className=""/>
                         <img src={faces[faceIdx]} alt="face" />
                         <img src={hairs[hairIdx]} alt="hair" />
                         <img src={outfits[outfitIdx]} alt="outfit" />
@@ -155,18 +169,6 @@ const Customise = () => {
                 </div>
             </div>
 
-
-            <div className="button buttonsave" style={{ position: 'fixed', top: 650, right: 390, zIndex: 1000 }}>
-                <button onClick={handleExport}>
-                    <FaRegShareSquare /> Share
-                </button>
-            </div>
-            
-            <div className="nextPage" style={{ position: 'fixed', top: 663, right: 270, zIndex: 1000 }}>
-                <button type="submit" onClick={handleNextPage}>Next</button>
-            </div>
-
-
             <div className="button-container">
                 <div className={`button-item ${activeButton === 'Happy' ? 'active' : ''}`} onClick={() => handleButtonClick('Happy')}>
                     <button className="btn">Happy</button>
@@ -182,18 +184,33 @@ const Customise = () => {
                 </div>
             </div>
 
-            <div className="input-box2" style={{ position: 'fixed', bottom: '15px', left: '50%', transform: 'translateX(-50%)' }}>
-                <input
-                    type="text"
-                    placeholder='My Name'
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
+            <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-4/5 max-w-[500px] flex items-center justify-between gap-3">
+                {/* Input Box */}
+                <div className="flex-1 h-[50px] rounded-[20px] border-2 border-white/20 bg-[rgba(171,155,150,0.3)] flex items-center px-4">
+                    <input
+                        type="text"
+                        placeholder="My Name"
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                        className="w-full h-full bg-transparent border-none text-[#AB9B96] outline-none placeholder-[#AB9B96] placeholder-opacity-100"
+                    />
+                </div>
+
+                {/* Next Button */}
+                <button
+                    type="submit"
+                    onClick={handleNextPage}
+                    className="w-[100px] h-[50px] cursor-pointer text-[#778D63] bg-[#CAD7BE] rounded-[20px] flex items-center justify-center text-[1.2rem] hover:opacity-80"
+                >
+                    Next
+                </button>
             </div>
 
-            <div className="button-item120">
 
-            </div>
+
+            {/* <div className="button-item120">
+
+            </div> */}
         </div>
     );
 };
