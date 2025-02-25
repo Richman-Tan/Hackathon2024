@@ -95,9 +95,9 @@ const Customise = () => {
                     ease elves
                 </h1>
 
-                <div className="fixed top-20">
+                <div className="fixed top-20 left-1/2 -translate-x-1/2">
                     {/* <h2 className="text-3xl" style={{ position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', color: '#333'} }> */}
-                    <h2 className="text-3xl inline-block">
+                    <h2 className="text-3xl text-[#333] inline-block">
                         {name || 'New Elf'}
                     </h2>
 
@@ -110,40 +110,40 @@ const Customise = () => {
                 </div>
 
                 <div className="flex-wrap bg-green-300">
-                    <div className="image-container flex justify-center mt-[10px] bg-blue-300">
-                        <img src={colours[colourIdx]} alt="colour" className=""/>
-                        <img src={faces[faceIdx]} alt="face" />
-                        <img src={hairs[hairIdx]} alt="hair" />
-                        <img src={outfits[outfitIdx]} alt="outfit" />
+                    <div className="flex justify-center mt-[10px] bg-blue-300">
+                        <img src={colours[colourIdx]} alt="colour" className="h-auto block absolute"/>
+                        <img src={faces[faceIdx]} alt="face" className="h-auto block absolute"/>
+                        <img src={hairs[hairIdx]} alt="hair" className="h-auto block absolute"/>
+                        <img src={outfits[outfitIdx]} alt="outfit" className="h-auto block absolute"/>
                     </div>
 
-                    <div className="buttonhair">
+                    <div className="relative top-[60px] -left-[150px] w-[50px] h-auto">
                         <button id="nexthair" onClick={nexthair}>
                             <img src={hairButtonImg} alt="next hair" />
                         </button>
                     </div>
 
-                    <div className="buttonface">
+                    <div className="relative top-[110px] -left-[150px] w-[50px] h-auto">
                         <button id="nextface" onClick={nextface}>
                             <img src={faceButtonImg} alt="next face" />
                         </button>
                     </div>
 
-                    <div className="buttonoutfit">
+                    <div className="relative top-[160px] -left-[150px] w-[50px] h-auto">
                         <button id="nextoutfit" onClick={nextoutfit}>
                             <img src={outfitButtonImg} alt="next outfit" />
                         </button>
                     </div>
 
-                    <div className="buttoncolour">
+                    <div className="relative top-[210px] -left-[150px] w-[50px] h-auto">
                         <button id="nextcolour" onClick={nextcolour}>
                             <img src={colourButtonImg} alt="next colour" />
                         </button>
                     </div>
                 </div>
 
-                <div className="flex-wrap flex-wrap2 cont">
-                    <div className="buttonhairright">
+                <div className="flex-wrap">
+                    <div className="relative -top-[200px] left-[240px] w-[50px] h-auto">
                         <button id="nexthair" onClick={nexthair}>
                             <img src={buttonhairright} alt="next hair" />
                         </button>
