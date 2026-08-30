@@ -1,0 +1,15 @@
+{
+  "npm": [
+    { "name": "react" },
+    { "name": "react-dom" },
+    { "name": "react-router-dom" },
+    { "name": "express" },
+    { "name": "mongodb" },
+    { "name": "socket.io" },
+    { "name": "tailwindcss" },
+    { "name": "react-scripts" }
+  ],
+  "defaults": {
+    "npmManifests": ["package.json"]
+  }
+}

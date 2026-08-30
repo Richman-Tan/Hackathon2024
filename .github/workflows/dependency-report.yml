@@ -1,0 +1,20 @@
+name: Dependency version report
+
+on:
+  push:
+    branches: [feat/20260831_RT_dependency-report]
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Print the table without writing the sheet
+        type: boolean
+        default: true
+
+jobs:
+  report:
+    uses: Richman-Tan/dependency-version-tracker/.github/workflows/track-versions.yml@v1
+    with:
+      config-path: tracked-packages.json
+      dry-run: ${{ github.event_name == 'push' || inputs.dry-run }}
+    secrets:
+      GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
