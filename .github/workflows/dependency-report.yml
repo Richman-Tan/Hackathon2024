@@ -1,0 +1,22 @@
+name: Dependency version report
+
+on:
+  schedule:
+    - cron: "0 18 * * 1-5" # ~06:00-07:00 NZ time, weekdays
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Print the table without writing the sheet
+        type: boolean
+        default: false
+
+jobs:
+  report:
+    uses: Richman-Tan/dependency-version-tracker/.github/workflows/track-versions.yml@v1
+    with:
+      sheet-id: "1Hpw1Fnv1HN8XXFf3dmOy1FzxDvLDzie5TKa2mPMbpoM"
+      sheet-tab: Hackathon2024
+      config-path: tracked-packages.json
+      dry-run: ${{ inputs.dry-run || false }}
+    secrets:
+      GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
